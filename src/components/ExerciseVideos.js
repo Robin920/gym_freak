@@ -5,7 +5,7 @@ function ExerciseVideos({exerciseVideos, name}) {
   return (
     <Box sx={{marginTop: {lg: '200px',xs: '20px'}}} p="20px">
       <Typography variant='h3' mb='33px' ml={3}>
-        Watch <span sx={{color: '#ff2625', textTransform: 'capitalize', fontWeight: 'bold'}}>{name}</span> exercise videos
+        Watch <span style={{color: '#800000', textTransform: 'capitalize', fontWeight: 'bold'}}>{name}</span> exercise videos
       </Typography>
       <Stack justifyContent='flex-start' flexWrap='wrap' alignItems='center'
         sx={{

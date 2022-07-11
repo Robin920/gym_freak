@@ -27,7 +27,7 @@ function Detail({exerciseDetail}) {
     <Stack gap='60px' sx={{flexDirection: {lg: 'row'}, p: '20px', alignItems: 'center'}}>
         <img src={gifUrl} alt={name} loading='lazy' className='detail-image'/>
         <Stack sx={{gap: {lg: '35px',xs: '20px'}}}>
-            <Typography variant='h3'>
+            <Typography variant='h3' style={{color: '#ff5252', textTransform: 'capitalize', fontWeight: 'bold'}}>
                 {name}
             </Typography>
             <Typography variant='h6'>

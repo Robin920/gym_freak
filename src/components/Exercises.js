@@ -29,7 +29,7 @@ function Exercises({exercises, setExercises, bodyPart}) {
     }
 
     fetchExercisesData();
-  },[bodyPart]);
+  },[bodyPart, setExercises]);
 
   return (
     <Box id="exercises"
@@ -37,8 +37,8 @@ function Exercises({exercises, setExercises, bodyPart}) {
       mt="50px"
       p="20px"
     >
-      <Typography variant="h3" mb="46px">
-        showing results
+      <Typography variant="h3" mb="46px" style={{color: '#ff5252', marginLeft: '40px', textTransform: 'capitalize', fontWeight: 'bold'}}>
+        Showing results
       </Typography>
       <Stack direction="row" sx={{gap:{lg: '110px',xs: '50px'}}} flexWrap="wrap" justifyContent="center">
         {currentExercises.map((exercise, index) => {
